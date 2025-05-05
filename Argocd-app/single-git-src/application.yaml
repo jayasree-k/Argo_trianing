@@ -6,14 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/jayasree-k/Argo_trianing.git'
+    repoURL: https://github.com/jayasree-k/Argo_trianing.git
     path: App-resources/single-git-src
     targetRevision: HEAD
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true  
-
+      selfHeal: true
