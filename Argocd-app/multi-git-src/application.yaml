@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-first-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/jayasree-k/Argo_trianing.git
+    path: App-resources/single-git-src
+    targetRevision: HEAD
+    repoURL: https://github.com/jayasree-k/Argo_trianing.git
+    path: App-resources/single-git-src
+    targetRevision: HEAD  
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  
