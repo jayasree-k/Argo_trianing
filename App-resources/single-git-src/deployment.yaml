@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-ui
 spec:
-  replicas: 
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
