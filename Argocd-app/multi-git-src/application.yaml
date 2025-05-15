@@ -5,13 +5,13 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source:
-    repoURL: https://github.com/jayasree-k/Argo_trianing.git
-    path: App-resources/multi-git-src
-    targetRevision: HEAD
-    repoURL: https://github.com/jayasree-k/Argo_trianing.git
-    path: App-resources/multi-git-src
-    targetRevision: HEAD  
+  sources:
+    - repoURL: https://github.com/jayasree-k/Argo_trianing.git
+      targetRevision: HEAD
+      path: App-resources/multi-git-src
+    - repoURL: https://github.com/jayasree-k/Argo_trianing.git
+      targetRevision: HEAD
+      path: App-resources/multi-git-src
   destination:
     server: https://kubernetes.default.svc
     namespace: default
